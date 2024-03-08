@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header__toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    div {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 30px;
+        user-select: none;
+    }
+    a {
+        text-decoration: none;
+        font-size: 17px;
+        margin-left: 25px;
+        color: #333;
+    }
+}
+
+.loading {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#outline {
+    stroke-dasharray: 2.42777px, 242.77666px;
+    stroke-dashoffset: 0;
+    -webkit-animation: anim 1.6s linear infinite;
+    animation: anim 1.6s linear infinite;
+}
+
+@-webkit-keyframes anim {
+    12.5% {
+        stroke-dasharray: 33.98873px, 242.77666px;
+        stroke-dashoffset: -26.70543px;
+    }
+
+    43.75% {
+        stroke-dasharray: 84.97183px, 242.77666px;
+        stroke-dashoffset: -84.97183px;
+    }
+
+    100% {
+        stroke-dasharray: 2.42777px, 242.77666px;
+        stroke-dashoffset: -240.34889px;
+    }
+}
+
+@keyframes anim {
+    12.5% {
+        stroke-dasharray: 33.98873px, 242.77666px;
+        stroke-dashoffset: -26.70543px;
+    }
+
+    43.75% {
+        stroke-dasharray: 84.97183px, 242.77666px;
+        stroke-dashoffset: -84.97183px;
+    }
+
+    100% {
+        stroke-dasharray: 2.42777px, 242.77666px;
+        stroke-dashoffset: -240.34889px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.profile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 100px;
+    h2 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    .profile-info-edit {
+        input {
+            width: 400px;
+        }
+    }
+    .profile-password-edit {
+        input {
+            width: 400px;
+        }
+    }
+}
+
+header a {
+    color: #fff;
+}
+
+.link-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+select {
+    padding: 15px;
+}
+
+.jobs-home-page {
+    margin-top: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    aside {
+        height: 80vh;
+        width: 30%;
+    }
+
+    > div {
+        width: 65%;
+        height: 80vh;
+        overflow: scroll;
+
+        nav {
+            margin: 30px 0;
+        }
+    }
+
+    h1 {
+        margin-bottom: 40px;
+    }
+
+    .jobs-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .card {
+        padding: 10px;
+        width: 23rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        a {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+}
+
+.page-btn {
+    border: none;
+}
+
+.container-card {
+    margin-top: 100px;
+}
